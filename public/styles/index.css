@@ -1,0 +1,74 @@
+.home {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  text-align: center;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-block: 0.1rem;
+  padding-inline: 1rem;
+}
+.home--hero {
+  min-height: calc(100vh - var(--nav-h));
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+.home__text {
+  text-align: left;
+  margin-right: 20px;
+  align-content: center;
+}
+.home__title {
+  font-size: 3rem;
+  color: var(--main-color);
+  margin-bottom: 10px;
+}
+#typing::after {
+  content: "▌";
+  margin-left: 2px;
+  animation: blink 0.9s steps(2, start) infinite;
+}
+.home__image img {
+  display: block;
+  width: clamp(300px, 28vw, 400px);
+  object-fit: cover;
+  border-radius: 50%;
+}
+.skills,
+.about {
+  color: var(--white);
+  background-color: var(--main-color);
+}
+.projects {
+  background-color: var(--background);
+  color: var(--main-color);
+}
+h2 {
+  font-size: 40px;
+  line-height: 1.2;
+  margin: 0;
+}
+.home__subtitle {
+  opacity: 0;
+  transform: translateY(50px);
+  will-change: transform, opacity;
+}
+.home:not(.home--hero) {
+  align-items: flex-start;
+  justify-content: center;
+  padding-top: clamp(2rem, 6vw, 5rem);
+}
+
+@keyframes blink {
+  to {
+    opacity: 0;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  #typing::after {
+    animation: none;
+  }
+}
