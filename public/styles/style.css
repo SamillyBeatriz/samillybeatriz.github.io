@@ -1,0 +1,28 @@
+:root {
+  --main-color: #6b120b;
+  --secondary-color: #113047;
+  --background-color: #fbf0d8;
+  --white: #ffff;
+  --main-font: "TikTok Sans", sans-serif;
+  --nav-h: 64px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 1rem;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--background-color);
+  font-family: var(--main-font);
+  font-weight: 500;
+}
+
+.footer {
+  min-height: 50vh;
+}
