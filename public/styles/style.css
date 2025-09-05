@@ -21,6 +21,7 @@ body {
   background-color: var(--background-color);
   font-family: var(--main-font);
   font-weight: 500;
+  overflow-x: hidden;
 }
 
 .footer {
