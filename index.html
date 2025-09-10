@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="../public/styles/style.css">
     <link rel="stylesheet" href="../public/styles/header.css">
     <link rel="stylesheet" href="../public/styles/index.css">
+    <link rel="stylesheet" href="../public/styles/index-projects.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=TikTok+Sans:opsz,wght@12..36,300..900&display=swap"
@@ -43,16 +44,41 @@
 
             </div>
         </section>
-
         <!-- PROJECTS -->
         <section class="home projects">
             <h2 class="home__subtitle">Projetos</h2>
+            <div class="card__container">
+                <!-- CARD 1 -->
+                <article class="card__item">
+                    <div class="thumb">
+                        <img loading="lazy" src="./public/assets/dashboard-project.png"
+                            alt="Miniatura de um blog de viagens" />
+                    </div>
+                    <h3 class="card__title">Dashboard Aprovados em Universidades Públicas</h3>
+                    <div class="chips">
+                        <span class="chip">Python</span>
+                        <span class="chip">Análise de Dados</span>
+                    </div>
+                    <p class="card__text">
+                        Dashboard interativo com Dash e Plotly para analisar dados reais de estudantes aprovados em
+                        universidades públicas. Projeto focado em visualização e análise exploratória com filtros
+                        dinâmicos.
+                    </p>
+                    <a class="card__link" href="https://github.com/SamillyBeatriz/aprovados_dashboard">Ver projeto</a>
+                </article>
+
+
+            </div>
+            <div class="link__container">
+                <a class="link__projects" href="https://github.com/SamillyBeatriz?tab=repositories" target="_blank">Ver
+                    projetos</a>
+            </div>
         </section>
         <!-- SKILLS -->
         <section class="home skills">
             <h2 class="home__subtitle">Skills</h2>
-            <div class="skills__container">
-                <article class="skills__card">
+            <div class="card__container">
+                <article class="card__item">
 
                     <span class="card__badge" aria-hidden="true">
                         <img src="/public/assets/python-logo.png" alt="Logo Python" class="badge__icon" />
@@ -64,7 +90,7 @@
                     </p>
                     <a class="card__link" href="#">Learn more…</a>
                 </article>
-                <article class="skills__card">
+                <article class="card__item">
 
                     <span class="card__badge" aria-hidden="true">
                         <img src="/public/assets/js-logo.png" alt="Logo Python" class="badge__icon" />
@@ -76,7 +102,7 @@
                     </p>
                     <a class="card__link" href="#">Learn more…</a>
                 </article>
-                <article class="skills__card">
+                <article class="card__item">
 
                     <span class="card__badge" aria-hidden="true">
                         <img src="/public/assets/postgresql-logo.png" alt="Logo Python" class="badge__icon" />
@@ -88,7 +114,7 @@
                     </p>
                     <a class="card__link" href="#">Learn more…</a>
                 </article>
-                <article class="skills__card">
+                <article class="card__item">
 
                     <span class="card__badge" aria-hidden="true">
                         <img src="/public/assets/node-logo.png" alt="Logo Python" class="badge__icon" />

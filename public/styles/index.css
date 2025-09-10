@@ -24,7 +24,7 @@
 .home__title {
   font-size: 5em;
   color: var(--main-color);
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 #typing {
   font-size: 1.5em;
@@ -65,40 +65,42 @@ h2 {
   padding-top: clamp(2rem, 6vw, 5rem);
 }
 
-.home.skills {
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
+.skills,
+.projects {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  flex-wrap: wrap;
   gap: 1.25rem;
   padding-inline: clamp(1rem, 4vw, 3rem);
 }
 
-.skills__container {
+.card__container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(260px, auto));
   gap: 24px;
-  width: min(100%, 1000px);
+  width: min(100%, 85%);
   margin-top: 12px;
 }
 
-.skills__card {
+.card__item {
   position: relative;
   background: #fff;
-  border-radius: 16px;
+  border-radius: 20px;
   padding: 20px 22px 22px;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.08);
   display: grid;
   gap: 10px;
   text-align: left;
   transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
-.skills__card:hover {
+.card__item:hover {
   transform: translateY(-4px);
   box-shadow: 0 14px 32px rgba(0, 0, 0, 0.12);
 }
 
-.skills__card .card__index {
+.card__item .card__index {
   position: absolute;
   top: 10px;
   right: 14px;
@@ -136,6 +138,7 @@ h2 {
   color: #6b7280;
   font-size: 14px;
   line-height: 1.5;
+  text-align: justify;
 }
 
 .card__link {
@@ -157,5 +160,8 @@ h2 {
 @media (prefers-reduced-motion: reduce) {
   #typing::after {
     animation: none;
+  }
+  .home__title {
+    font-size: 3em;
   }
 }

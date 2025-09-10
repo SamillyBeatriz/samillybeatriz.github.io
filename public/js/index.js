@@ -9,5 +9,6 @@ window.addEventListener('DOMContentLoaded', () => {
     typewriter(typingEl, TYPING_TEXT, { speed: 50 });
 
     initScrollReveal('.home__subtitle');
-    initScrollReveal('.skills__card');
+    initScrollReveal('.card__item');
+    initScrollReveal('.link__projects');
 });

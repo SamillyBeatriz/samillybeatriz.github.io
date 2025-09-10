@@ -1,0 +1,45 @@
+.thumb {
+  aspect-ratio: 16/11;
+  background: var(--surface-2);
+  position: relative;
+  overflow: hidden;
+}
+.thumb img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 20px;
+  filter: saturate(1.05) contrast(1.03);
+}
+.chips {
+  display: flex;
+  gap: 6px;
+}
+.chip {
+  align-content: center;
+  font-size: 0.72rem;
+  padding: 5px 16px;
+  border-radius: 20px;
+  background-color: var(--main-color);
+}
+.link__container {
+  display: flex;
+}
+
+.link__projects {
+  border-radius: 20px;
+  margin-top: 20px;
+  color: var(--main-color);
+  background-color: var(--background-color);
+  font-size: 1.2rem;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .card,
+  .btn {
+    transition: none;
+  }
+  .card:hover {
+    translate: 0;
+  }
+}
